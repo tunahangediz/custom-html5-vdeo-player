@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <h2 style="text-align: center">Custom HTML5 Video Player</h2>
+    <div class="container">
+      <div class="player">
+        <video id="video" class="video" src="./652333414.mp4"></video>
+        <div class="control">
+          <div class="progress">
+            <div class="progress-juice"></div>
+          </div>
+          <div class="buttons">
+            <button id="toggle" class="toggle">►</button>
+            <div class="volume-control">
+              <label for="volume"
+                ><i id="volume-icon" class="fas fa-volume-up"></i
+              ></label>
+              <input id="volume" type="range" />
+            </div>
+
+            <i id="expand" class="fa fa-expand expand" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
